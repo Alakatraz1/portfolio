@@ -1,0 +1,117 @@
+body{
+    background-color: rgb(228, 239, 246);
+}
+@media(max-width:500px){
+    .nav-bar{
+        visibility:hidden;
+        height: 0px;
+    }
+    .main{
+        display: flex;
+        flex-direction: column-reverse;
+        height: 100% !important;
+        width: 100% !important;
+    }
+    #col1{
+        display: flex;
+        flex-direction: row !important;
+    }
+
+}
+@media(max-width:1200px) {
+    #col3 img{
+        size: 50% !important;
+    }
+}
+
+.nav-bar{
+    display: flex;
+    justify-content: end;
+    font-family: sans-serif;
+    padding: 10px;
+    gap: 40px;
+}
+button{
+    text-decoration: none;
+    background-color: rgb(25, 113, 255);
+    padding: 10px;
+    border: none;
+    font-weight: 700;
+    border-radius: 10px 10px;
+    width: 100px;
+}
+button:hover{
+    background-image: linear-gradient(rgb(25, 113, 255),rgb(83, 149, 255));
+
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.main{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(0, 255, 251, 0.163);
+    width: 60vw;
+    height: 70vh;
+    padding: 0px 20px 0px 20px;
+    border-radius: 10px;
+}
+.main img{
+    width: 40px;
+}
+.main #col1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    padding: 10px;
+}
+#col2{
+    display: flex;
+    flex-direction: column; 
+}
+#Heading{
+    font-family: sans-serif;
+    font-weight: 900;
+    font-size: 50px;
+    padding: 10px;
+}
+#status{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    font-size: large;
+    padding: 10px;
+}
+#info{
+    font-family: sans-serif;
+    font-weight: 400;
+    font-size: large;  
+    padding: 10px;
+}
+#col3{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+#col3 img{
+height: 300px;
+width: 300px;
+position: static;
+border-radius: 60% 10%;
+filter: drop-shadow(10px 10px 10px);
+padding: 10px;
+}
+.part1{
+    width: 100%;
+    height: 600px;
+    background-color: red;
+    font-size: xx-large;
+}
+.part2{
+    width: 100%;    
+    height: 600px;
+    background-color: blue;
+    font-size: xx-large;
+}
