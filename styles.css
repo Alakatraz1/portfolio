@@ -16,6 +16,14 @@ body{
         display: flex;
         flex-direction: row !important;
     }
+    .grids{
+        grid-template-columns: 500px !important;
+
+    }
+    .backgrounds{
+        height: 100% !important;
+        width: 100% !important;
+    }
 
 }
 @media(max-width:1200px) {
@@ -26,10 +34,13 @@ body{
 
 .nav-bar{
     display: flex;
+    position: fixed;
+    width: 90%;
     justify-content: end;
     font-family: sans-serif;
-    padding: 10px;
     gap: 40px;
+    z-index: 1000;
+    margin: 10px;
 }
 button{
     text-decoration: none;
@@ -48,6 +59,7 @@ button:hover{
     display: flex;
     align-items: center;
     justify-content: center;
+    height: 100vh;
 }
 .main{
     display: flex;
@@ -61,12 +73,17 @@ button:hover{
 .main img{
     width: 40px;
 }
-.main #col1{
+
+#col1{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
+    align-items: center;
     gap: 30px;
     padding: 10px;
+}
+#col1 img{
+    width: 50px;
 }
 #col2{
     display: flex;
@@ -114,4 +131,55 @@ padding: 10px;
     height: 600px;
     background-color: blue;
     font-size: xx-large;
+}
+.grids{
+    display: grid;
+    grid-template-columns: 500px 500px;
+    grid-template-rows: 200px 200px;
+    font-family: sans-serif;
+}
+.grids>div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+    flex-wrap: wrap;
+}
+.grids p{
+    font-size: large;
+    font-weight: 700;
+}
+h2{
+    text-align: center;
+    font-family: sans-serif;
+padding-top: 36px;
+}
+.grids>div>img{
+    width: 100px;
+    height: 100px;
+}
+.backgrounds{
+    background-color: rgba(0, 255, 251, 0.163);
+    width: 60vw;
+    height: 70vh;
+}
+.about-me{
+    display: flex;
+    flex-wrap: wrap;
+    font-family: sans-serif;
+    font-weight: 500;
+    font-size: x-large;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+.contact{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    font-size: large;
+    
 }
