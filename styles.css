@@ -2,6 +2,9 @@ body{
     background-color: rgb(228, 239, 246);
 }
 @media(max-width:500px){
+    body{
+        margin: 0px;
+    }
     .nav-bar{
         visibility:hidden;
         height: 0px;
@@ -9,20 +12,34 @@ body{
     .main{
         display: flex;
         flex-direction: column-reverse;
-        height: 100% !important;
-        width: 100% !important;
+        height: 100vh !important;
+        width: 100vw !important;
     }
     #col1{
         display: flex;
         flex-direction: row !important;
     }
     .grids{
-        grid-template-columns: 500px !important;
+        grid-template-columns: 1fr !important;
 
     }
     .backgrounds{
         height: 100% !important;
         width: 100% !important;
+    }
+    #col3 img{
+        height: 250px !important;
+        width: 250px !important;
+        position: absolute;
+        top: 10px;
+    }
+    .grids>div>img{
+        width: 50px !important;
+        height: 50px !important;
+    }
+    .grids>div{
+        display: flex !important;
+        align-items: start !important;
     }
 
 }
@@ -115,10 +132,9 @@ button:hover{
 #col3 img{
 height: 300px;
 width: 300px;
-position: static;
 border-radius: 60% 10%;
 filter: drop-shadow(10px 10px 10px);
-padding: 10px;
+
 }
 .part1{
     width: 100%;
@@ -137,6 +153,7 @@ padding: 10px;
     grid-template-columns: 500px 500px;
     grid-template-rows: 200px 200px;
     font-family: sans-serif;
+    flex-wrap: wrap;
 }
 .grids>div{
     display: flex;
