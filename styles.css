@@ -20,8 +20,9 @@ body{
         flex-direction: row !important;
     }
     .grids{
-        grid-template-columns: 1fr !important;
-
+        grid-template-columns: 0.5fr !important;
+        align-items: center !important;
+        justify-content: center !important;
     }
     .backgrounds{
         height: 100% !important;
@@ -39,7 +40,12 @@ body{
     }
     .grids>div{
         display: flex !important;
-        align-items: start !important;
+        align-items: center !important;
+        flex-direction: column !important;
+        justify-content: center !important;
+    }
+    .about-me{
+        font-size: large !important;
     }
 
 }
@@ -198,5 +204,5 @@ padding-top: 36px;
     justify-content: space-around;
     flex-direction: column;
     font-size: large;
-    
+     
 }
