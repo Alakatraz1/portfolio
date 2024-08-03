@@ -1,7 +1,7 @@
 body{
     background-color: rgb(228, 239, 246);
 }
-@media(max-width:500px){
+@media(max-width:1000px){
     body{
         margin: 0px;
     }
@@ -204,5 +204,5 @@ padding-top: 36px;
     justify-content: space-around;
     flex-direction: column;
     font-size: large;
-     
+    
 }
