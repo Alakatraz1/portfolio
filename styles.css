@@ -1,7 +1,7 @@
 body{
     background-color: rgb(228, 239, 246);
 }
-@media(max-width:1000px){
+@media(max-width:600px){
     body{
         margin: 0px;
     }
@@ -53,9 +53,10 @@ body{
     }
 
 }
-@media(max-width:1200px) {
+@media(min-width:800px) {
     #col3 img{
-        size: 50% !important;
+        height: 25vw !important;
+        width: 25vw !important;
     }
 }
 
